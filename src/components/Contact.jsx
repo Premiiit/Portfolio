@@ -19,13 +19,13 @@ export default function Contact() {
           </p>
 
           <div className="flex space-x-6 text-2xl text-green-300">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
+            <a href="https://github.com/Premiiit" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
+            <a href="https://linkedin.com/in/prem-chandra-648223295" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
               <FaLinkedin />
             </a>
-            <a href="mailto:your.email@example.com" className="hover:text-green-500">
+            <a href="mailto:prem21pcp@gmail.com" className="hover:text-green-500">
               <FaEnvelope />
             </a>
           </div>
