@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
+  const formRef = useRef();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = formRef.current;
+    const data = new FormData(form);
+
+    const res = await fetch("https://formspree.io/f/xkgrnqnw", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (res.ok) {
+      console.log(res)
+      toast.success("Message sent successfully!");
+      form.reset();
+    } else {
+      toast.error("Failed to send message. Try again later.");
+    }
+  };
+
   return (
     <section
       id="contact"
       className="bg-gradient-to-b from-[#071a1b] to-black text-green-100 py-16 px-6 md:px-20 border-t border-green-800"
     >
+      <Toaster position="bottom-center" reverseOrder={false} />
+
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-start">
         {/* Left side: Text and Socials */}
         <div className="md:w-1/2 space-y-6">
@@ -34,8 +61,8 @@ export default function Contact() {
         {/* Right side: Contact Form */}
         <div className="md:w-1/2 w-full">
           <form
-            action="https://formspree.io/f/xkgrnqnw"
-            method="POST"
+            ref={formRef}
+            onSubmit={handleSubmit}
             className="grid gap-4 bg-[#0e2c2c] p-6 rounded-xl shadow-xl"
           >
             <input

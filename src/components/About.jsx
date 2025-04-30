@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/aboutIMG1.png";
+import profile from "../assets/profile.jpg"
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -24,13 +25,13 @@ const About = () => {
         <div className="w-full lg:w-1/2 flex justify-center items-center relative mb-8 lg:mb-0 lg:mr-8">
           <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
             <img
-              src={aboutImg}
+              src={profile}
               alt="About me sketch"
-              className="h-full w-full object-contain"
-              style={{
-                filter: "brightness(0.9) contrast(1.1) drop-shadow(0 0 3px rgba(0,200,100,0.3))",
-                mixBlendMode: "screen",
-              }}
+              className="h-full w-full object-cover object-[50%_50%] rounded-full border-4 border-green-400 shadow-lg"
+              // style={{
+              //   filter: "brightness(0.9) contrast(1.1) drop-shadow(0 0 3px rgba(0,200,100,0.3))",
+              //   mixBlendMode: "screen",
+              // }}
             />
             <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-[#071a1b] opacity-70 pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-radial from-[rgba(0,200,100,0.03)] via-transparent to-transparent pointer-events-none mix-blend-overlay" />

@@ -85,7 +85,7 @@ export default function ProjectCard({ title, description, tech, link, image }) {
               variants={descVariants}
               // No 'initial' or 'animate' here - inherits from parent 'animate={controls}'
             >
-              <p className="text-gray-200 text-sm md:text-base">
+              <p className="text-gray-200 text-xs md:text-sm lg:text-xs xl:text-sm line-clamp-4 lg:line-clamp-3">
                 {description}
               </p>
             </motion.div>
