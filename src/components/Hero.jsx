@@ -58,7 +58,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             className="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-xl text-white font-semibold transition"
           >
