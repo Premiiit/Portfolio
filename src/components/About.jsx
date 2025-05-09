@@ -49,7 +49,7 @@ const About = () => {
           </p>
 
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300">
-            Off the keyboard, I’m a chess enthusiast and an admirer of minimalist design. Chess influences how I think: a balance of vision, patience, and precision. It inspires me to build not just for now, but for the next ten moves ahead.
+            Off the keyboard, I enjoy reading, brainstorming new ideas, and drawing inspiration from chess — always thinking a few steps ahead.
           </p>
         </div>
       </div>

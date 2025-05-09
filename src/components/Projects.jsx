@@ -10,7 +10,7 @@ import creator from "../assets/CreatersConnect.jpg";
 const projects = [
   {
     title: "Applicant Tracking System",
-    description: "Built a scalable ATS backend with NestJS and PostgreSQL, automating resume parsing and candidate scoring to streamline recruitment. The system ranks candidates, cuts screening time, and improves hiring precision.",
+    description: "Built a scalable ATS backend with NestJS and PostgreSQL, automating resume parsing and candidate scoring to streamline recruitment. The system ranks candidates and improves hiring precision.",
     tech: ["NestJS", "TypeScript", "PostgreSQL", "Prisma"],
     link: "https://github.com/Premiiit/ats-engine",
     image: ats,
